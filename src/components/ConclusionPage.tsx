@@ -3,11 +3,32 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import './ConclusionPage.css';
 import { personas } from '../data/personaData';
 
+// Import persona images
+import curatedCreatorImage from '../assets/Personas/Curated-Creator.png';
+import fleetingSnapperImage from '../assets/Personas/Fleeting-Snapper.png';
+import realTimeConnectorImage from '../assets/Personas/Real-Time-Connector.png';
+import quietObserverImage from '../assets/Personas/Quiet-Observer.png';
+import socialButterflyImage from '../assets/Personas/Social-Butterfly.png';
+import thoughtfulCommentatorImage from '../assets/Personas/Thoughtful-Commentator.png';
+
 // Helper function to get image path
-const getPersonaImagePath = (personaName: string) => {
-  // Convert persona name to the correct filename format
-  const fileName = personaName.replace(/\s+/g, '-').toLowerCase();
-  return `/assets/Personas/${fileName}.png`;
+const getPersonaImage = (personaName: string) => {
+  switch (personaName.toLowerCase()) {
+    case 'curated creator':
+      return '/assets/Personas/Curated-Creator.png';
+    case 'fleeting snapper':
+      return '/assets/Personas/Fleeting-Snapper.png';
+    case 'real-time connector':
+      return '/assets/Personas/Real-Time-Connector.png';
+    case 'quiet observer':
+      return '/assets/Personas/Quiet-Observer.png';
+    case 'social butterfly':
+      return '/assets/Personas/Social-Butterfly.png';
+    case 'thoughtful commentator':
+      return '/assets/Personas/Thoughtful-Commentator.png';
+    default:
+      return '/assets/Personas/Curated-Creator.png';
+  }
 };
 
 interface LocationState {
@@ -103,13 +124,12 @@ const ConclusionPage: React.FC = () => {
             <div className="primary-persona">
               <div className="persona-card">
                 <img 
-                  src={getPersonaImagePath(primaryPersona.name)} 
-                  alt={primaryPersona.name}
+                  src={getPersonaImage(primaryPersona.name)} 
+                  alt={`${primaryPersona.name} illustration`}
                   className="persona-image"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
                     target.style.display = 'none';
-                    console.error(`Failed to load image for ${primaryPersona.name}`);
                   }}
                 />
                 <p>{primaryPersona.description}</p>
@@ -133,7 +153,7 @@ const ConclusionPage: React.FC = () => {
                 <div className="persona-scroll-item">
                   {!imageErrors.has(personas[currentPersonaIndex].name) && (
                     <img 
-                      src={getPersonaImagePath(personas[currentPersonaIndex].name)} 
+                      src={getPersonaImage(personas[currentPersonaIndex].name)} 
                       alt={personas[currentPersonaIndex].name}
                       className="persona-image"
                       onLoad={() => handleImageLoad(personas[currentPersonaIndex].name)}
