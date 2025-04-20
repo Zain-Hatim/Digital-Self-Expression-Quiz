@@ -1,0 +1,495 @@
+{
+  "1": {
+    "Multiple times a day": {
+      "Curated Creator": 2,
+      "Fleeting Snapper": 2,
+      "Thoughtful Commentator": 1,
+      "Social Butterfly": 3,
+      "Quiet Observer": 0,
+      "Real-Time Connector": 2
+    },
+    "Once a day": {
+      "Curated Creator": 2,
+      "Fleeting Snapper": 2,
+      "Thoughtful Commentator": 1,
+      "Social Butterfly": 2,
+      "Quiet Observer": 0,
+      "Real-Time Connector": 1
+    },
+    "A few times a week": {
+      "Curated Creator": 2,
+      "Fleeting Snapper": 1,
+      "Thoughtful Commentator": 2,
+      "Social Butterfly": 1,
+      "Quiet Observer": 1,
+      "Real-Time Connector": 1
+    },
+    "Once a week": {
+      "Curated Creator": 1,
+      "Fleeting Snapper": 1,
+      "Thoughtful Commentator": 2,
+      "Social Butterfly": 0,
+      "Quiet Observer": 2,
+      "Real-Time Connector": 0
+    },
+    "Less than once a week": {
+      "Curated Creator": 0,
+      "Fleeting Snapper": 0,
+      "Thoughtful Commentator": 1,
+      "Social Butterfly": 0,
+      "Quiet Observer": 3,
+      "Real-Time Connector": 0
+    },
+    "Rarely or never": {
+      "Curated Creator": 0,
+      "Fleeting Snapper": 0,
+      "Thoughtful Commentator": 0,
+      "Social Butterfly": 0,
+      "Quiet Observer": 4,
+      "Real-Time Connector": 0
+    }
+  },
+  "2": {
+    "Producing Content": {
+      "Curated Creator": 3,
+      "Fleeting Snapper": 2,
+      "Thoughtful Commentator": 2,
+      "Social Butterfly": 1,
+      "Quiet Observer": 0,
+      "Real-Time Connector": 2
+    },
+    "Consuming Content": {
+      "Curated Creator": 0,
+      "Fleeting Snapper": 1,
+      "Thoughtful Commentator": 2,
+      "Social Butterfly": 1,
+      "Quiet Observer": 3,
+      "Real-Time Connector": 1
+    },
+    "Both": {
+      "Curated Creator": 2,
+      "Fleeting Snapper": 2,
+      "Thoughtful Commentator": 2,
+      "Social Butterfly": 2,
+      "Quiet Observer": 1,
+      "Real-Time Connector": 2
+    }
+  },
+  "5": {
+    "Yes": {
+      "Curated Creator": 2,
+      "Fleeting Snapper": 2,
+      "Thoughtful Commentator": 2,
+      "Social Butterfly": 3,
+      "Quiet Observer": 0,
+      "Real-Time Connector": 2
+    },
+    "No": {
+      "Curated Creator": 0,
+      "Fleeting Snapper": 0,
+      "Thoughtful Commentator": 1,
+      "Social Butterfly": 0,
+      "Quiet Observer": 3,
+      "Real-Time Connector": 1
+    }
+  },
+  "7": {
+    "It boosts my confidence and motivates me to post more": {
+      "Curated Creator": 2,
+      "Fleeting Snapper": 1,
+      "Social Butterfly": 3
+    },
+    "It helps me improve my content based on constructive criticism": {
+      "Curated Creator": 2,
+      "Thoughtful Commentator": 3
+    },
+    "It makes me feel more connected to my audience": {
+      "Social Butterfly": 3,
+      "Real-Time Connector": 2
+    },
+    "It doesn't really affect me": {
+      "Quiet Observer": 3
+    },
+    "It makes me feel discouraged or less likely to post in the future": {
+      "Quiet Observer": 2
+    },
+    "It encourages me to engage more with others' content": {
+      "Thoughtful Commentator": 2,
+      "Social Butterfly": 2
+    },
+    "Other": {
+      "Curated Creator": 1,
+      "Fleeting Snapper": 1,
+      "Thoughtful Commentator": 1,
+      "Social Butterfly": 1,
+      "Quiet Observer": 1,
+      "Real-Time Connector": 1
+    }
+  },
+  "10": {
+    "Yes": {
+      "Curated Creator": 2,
+      "Fleeting Snapper": 2,
+      "Social Butterfly": 2,
+      "Real-Time Connector": 2
+    },
+    "No": {
+      "Quiet Observer": 3
+    }
+  },
+  "12": {
+    "Yes": {
+      "Social Butterfly": 2,
+      "Real-Time Connector": 2
+    },
+    "No": {
+      "Quiet Observer": 2
+    }
+  },
+  "3": {
+    "Personal updates": {
+      "Fleeting Snapper": 2,
+      "Social Butterfly": 1
+    },
+    "Memes and humorous content": {
+      "Fleeting Snapper": 2,
+      "Social Butterfly": 2
+    },
+    "Reposts (from other accounts/pages)": {
+      "Quiet Observer": 1,
+      "Thoughtful Commentator": 1
+    },
+    "News and current events": {
+      "Thoughtful Commentator": 2
+    },
+    "Opinions and rants": {
+      "Thoughtful Commentator": 2
+    },
+    "Travel photos or experiences": {
+      "Curated Creator": 2
+    },
+    "Food pictures or reviews": {
+      "Curated Creator": 1,
+      "Social Butterfly": 1
+    },
+    "Educational or informational posts": {
+      "Thoughtful Commentator": 2,
+      "Curated Creator": 1
+    },
+    "Creative work (art, writing, music, etc.)": {
+      "Curated Creator": 3
+    },
+    "Product or service reviews": {
+      "Curated Creator": 1,
+      "Thoughtful Commentator": 1
+    },
+    "Promotional or business-related content": {
+      "Curated Creator": 2
+    },
+    "Motivational or inspirational quotes": {
+      "Curated Creator": 1,
+      "Real-Time Connector": 1
+    },
+    "Other": {
+      "Fleeting Snapper": 1,
+      "Curated Creator": 1,
+      "Thoughtful Commentator": 1,
+      "Quiet Observer": 1,
+      "Real-Time Connector": 1,
+      "Social Butterfly": 1
+    }
+  },
+  "4": {
+    "Posts (Regular Feed)": {
+      "Curated Creator": 2
+    },
+    "Stories (Temporary Content)": {
+      "Fleeting Snapper": 3
+    },
+    "Reels (Short-form videos)": {
+      "Fleeting Snapper": 3
+    },
+    "Threads (Discussion posts)": {
+      "Thoughtful Commentator": 3
+    },
+    "Tweets (Short messages)": {
+      "Thoughtful Commentator": 2
+    },
+    "Live Stream": {
+      "Real-Time Connector": 3
+    },
+    "Notes (Written updates)": {
+      "Curated Creator": 2,
+      "Thoughtful Commentator": 1
+    },
+    "Status (Text/emoji updates)": {
+      "Real-Time Connector": 2
+    },
+    "Comments": {
+      "Thoughtful Commentator": 2,
+      "Social Butterfly": 1
+    },
+    "Likes / Reactions": {
+      "Social Butterfly": 2
+    },
+    "Saves / Bookmarks": {
+      "Quiet Observer": 2
+    },
+    "Share / Repost / Retweet": {
+      "Social Butterfly": 2
+    },
+    "Polls / Q&A / Ask Me Anything": {
+      "Social Butterfly": 1,
+      "Fleeting Snapper": 1
+    },
+    "Tagged Posts / Mentions": {
+      "Social Butterfly": 2
+    },
+    "Memes / Template-based Content": {
+      "Fleeting Snapper": 2
+    },
+    "Anonymous Questions / Confession Boxes": {
+      "Fleeting Snapper": 1,
+      "Thoughtful Commentator": 1
+    },
+    "Streaks / Check-ins": {
+      "Fleeting Snapper": 2
+    },
+    "Duets / Remixes": {
+      "Fleeting Snapper": 2
+    },
+    "Pinned Posts / Highlights": {
+      "Curated Creator": 1
+    },
+    "Groups / Communities / Subreddits": {
+      "Thoughtful Commentator": 2
+    },
+    "Notifications Tab Engagement": {
+      "Social Butterfly": 1
+    },
+    "Private Accounts": {
+      "Quiet Observer": 2
+    },
+    "Chats (Notifications Tab)": {
+      "Social Butterfly": 2
+    },
+    "Other (User-defined)": {
+      "Fleeting Snapper": 1,
+      "Curated Creator": 1,
+      "Thoughtful Commentator": 1,
+      "Quiet Observer": 1,
+      "Real-Time Connector": 1,
+      "Social Butterfly": 1
+    }
+  },
+  "6": {
+    "Explore (Getting discovered by a wider audience)": {
+      "Curated Creator": 2
+    },
+    "Likes (Receiving positive reactions)": {
+      "Social Butterfly": 2,
+      "Fleeting Snapper": 1
+    },
+    "Saves (People saving your content for later)": {
+      "Curated Creator": 2,
+      "Quiet Observer": 1
+    },
+    "Shares (Others sharing your content with their network)": {
+      "Curated Creator": 2,
+      "Social Butterfly": 2
+    },
+    "Comments (Receiving written feedback or thoughts)": {
+      "Thoughtful Commentator": 3
+    },
+    "Other": {
+      "Fleeting Snapper": 1,
+      "Curated Creator": 1,
+      "Thoughtful Commentator": 1,
+      "Quiet Observer": 1,
+      "Real-Time Connector": 1,
+      "Social Butterfly": 1
+    }
+  },
+  "8": {
+    "Personal updates from friends/family": {
+      "Quiet Observer": 2,
+      "Social Butterfly": 1
+    },
+    "Memes and funny videos": {
+      "Fleeting Snapper": 2
+    },
+    "News and current events": {
+      "Thoughtful Commentator": 2
+    },
+    "Celebrity or influencer content": {
+      "Fleeting Snapper": 1,
+      "Curated Creator": 1
+    },
+    "Educational or informative posts": {
+      "Thoughtful Commentator": 2
+    },
+    "Tutorials or how-to videos": {
+      "Thoughtful Commentator": 1
+    },
+    "Travel content": {
+      "Curated Creator": 1
+    },
+    "Food-related content (recipes, reviews, etc.)": {
+      "Curated Creator": 1
+    },
+    "Product reviews or unboxings": {
+      "Quiet Observer": 1
+    },
+    "Motivational or inspirational content": {
+      "Real-Time Connector": 1
+    },
+    "Creative content (art, writing, music, etc.)": {
+      "Curated Creator": 2
+    },
+    "Gaming content or livestreams": {
+      "Real-Time Connector": 2
+    },
+    "Other": {
+      "Fleeting Snapper": 1,
+      "Curated Creator": 1,
+      "Thoughtful Commentator": 1,
+      "Quiet Observer": 1,
+      "Real-Time Connector": 1,
+      "Social Butterfly": 1
+    }
+  },
+  "9": {
+    "Posts (Regular Feed)": {
+      "Curated Creator": 2
+    },
+    "Stories (Temporary Content)": {
+      "Fleeting Snapper": 3
+    },
+    "Reels (Short-form videos)": {
+      "Fleeting Snapper": 3
+    },
+    "Threads (Discussion posts)": {
+      "Thoughtful Commentator": 3
+    },
+    "Tweets (Short messages)": {
+      "Thoughtful Commentator": 2
+    },
+    "Live Stream": {
+      "Real-Time Connector": 3
+    },
+    "Notes (Written updates)": {
+      "Curated Creator": 2,
+      "Thoughtful Commentator": 1
+    },
+    "Status (Text/emoji updates)": {
+      "Real-Time Connector": 2
+    },
+    "Comments": {
+      "Thoughtful Commentator": 2,
+      "Social Butterfly": 1
+    },
+    "Likes / Reactions": {
+      "Social Butterfly": 2
+    },
+    "Saves / Bookmarks": {
+      "Quiet Observer": 2
+    },
+    "Share / Repost / Retweet": {
+      "Social Butterfly": 2
+    },
+    "Polls / Q&A / Ask Me Anything": {
+      "Social Butterfly": 1,
+      "Fleeting Snapper": 1
+    },
+    "Tagged Posts / Mentions": {
+      "Social Butterfly": 2
+    },
+    "Memes / Template-based Content": {
+      "Fleeting Snapper": 2
+    },
+    "Anonymous Questions / Confession Boxes": {
+      "Fleeting Snapper": 1,
+      "Thoughtful Commentator": 1
+    },
+    "Streaks / Check-ins": {
+      "Fleeting Snapper": 2
+    },
+    "Duets / Remixes": {
+      "Fleeting Snapper": 2
+    },
+    "Pinned Posts / Highlights": {
+      "Curated Creator": 1
+    },
+    "Groups / Communities / Subreddits": {
+      "Thoughtful Commentator": 2
+    },
+    "Notifications Tab Engagement": {
+      "Social Butterfly": 1
+    },
+    "Private Accounts": {
+      "Quiet Observer": 2
+    },
+    "Chats (Notifications Tab)": {
+      "Social Butterfly": 2
+    },
+    "Other (User-defined)": {
+      "Fleeting Snapper": 1,
+      "Curated Creator": 1,
+      "Thoughtful Commentator": 1,
+      "Quiet Observer": 1,
+      "Real-Time Connector": 1,
+      "Social Butterfly": 1
+    }
+  },
+  "11": {
+    "DMs (Direct messages)": {
+      "Social Butterfly": 3
+    },
+    "Comments (Engaging in discussions on posts)": {
+      "Thoughtful Commentator": 3
+    },
+    "Quote posts (Replying with quoted content)": {
+      "Thoughtful Commentator": 2
+    },
+    "Mentions (Tagging others in posts or comments)": {
+      "Social Butterfly": 2
+    },
+    "Reactions (Reacting to posts with emojis or other forms)": {
+      "Social Butterfly": 2
+    },
+    "Other": {
+      "Fleeting Snapper": 1,
+      "Curated Creator": 1,
+      "Thoughtful Commentator": 1,
+      "Quiet Observer": 1,
+      "Real-Time Connector": 1,
+      "Social Butterfly": 1
+    }
+  },
+  "13": {
+    "Close friends (Creating a private group of close contacts)": {
+      "Social Butterfly": 2,
+      "Quiet Observer": 1
+    },
+    "Groups (Joining or creating groups for specific interests)": {
+      "Thoughtful Commentator": 2
+    },
+    "Broadcast channels (Following channels for updates)": {
+      "Real-Time Connector": 2
+    },
+    "Pinned posts (Engaging with or viewing pinned posts on profiles)": {
+      "Curated Creator": 2
+    },
+    "Bitmojis (Using or interacting with personal avatars)": {
+      "Fleeting Snapper": 2
+    },
+    "Other": {
+      "Fleeting Snapper": 1,
+      "Curated Creator": 1,
+      "Thoughtful Commentator": 1,
+      "Quiet Observer": 1,
+      "Real-Time Connector": 1,
+      "Social Butterfly": 1
+    }
+  }
+}
