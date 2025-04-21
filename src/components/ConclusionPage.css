@@ -365,13 +365,13 @@
 
 .other-personas-container {
   margin: 1.5rem auto;
-  padding: 1rem;
+  padding: 1.5rem;
   background: rgba(10, 25, 47, 0.8);
   border-radius: 16px;
   border: 1px solid rgba(100, 255, 218, 0.1);
-  min-height: auto;
-  width: 95%;
-  max-width: 800px;
+  min-height: 400px;
+  width: 98%;
+  max-width: 850px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -391,9 +391,9 @@
   justify-content: center;
   gap: 0.5rem;
   position: relative;
-  min-height: auto;
+  min-height: 350px;
   width: 100%;
-  padding: 0.5rem;
+  padding: 1rem;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -419,8 +419,8 @@
 
 .persona-scroll-item {
   width: 100%;
-  max-width: 550px;
-  padding: 1rem;
+  max-width: 600px;
+  padding: 1.2rem;
   background: rgba(10, 25, 47, 0.9);
   border-radius: 16px;
   border: 1px solid rgba(100, 255, 218, 0.2);
