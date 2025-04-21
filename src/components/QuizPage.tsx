@@ -33,6 +33,7 @@ const QuizPage: React.FC = () => {
   const currentQuestion = questions[currentQuestionIndex];
   const isLastQuestion = currentQuestionIndex === questions.length - 1;
   const isQuestion12AnsweredNo = currentQuestionIndex === 11 && selectedOptions[12]?.includes('No');
+  const isQuestion1AnsweredRarely = currentQuestionIndex === 0 && selectedOptions[1]?.includes('Rarely or never');
 
   const updatePersonaScores = (questionId: number, answers: string[]) => {
     const questionScores = scoringMap[questionId.toString()];
@@ -79,8 +80,8 @@ const QuizPage: React.FC = () => {
     updatePersonaScores(currentQuestion.id, currentAnswers);
 
     // Check for early conclusion conditions
-    if (isLastQuestion) {
-      navigate('/conclusion', { state: { personaScores } });
+    if (isLastQuestion || isQuestion1AnsweredRarely) {
+      navigate('/conclusion', { state: { personaScores, isRarelyUser: isQuestion1AnsweredRarely } });
       return;
     }
 
@@ -164,7 +165,7 @@ const QuizPage: React.FC = () => {
             onClick={handleNext}
             disabled={!hasSelectedOption}
           >
-            {isLastQuestion || isQuestion12AnsweredNo ? 'Submit' : 'Next'}
+            {isLastQuestion || isQuestion12AnsweredNo || isQuestion1AnsweredRarely ? 'Submit' : 'Next'}
           </button>
         </div>
       </div>

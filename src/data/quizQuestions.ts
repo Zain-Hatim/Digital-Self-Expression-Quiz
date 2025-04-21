@@ -13,7 +13,7 @@ export const questions: Question[] = [
       "b) Daily",
       "c) Weekly",
       "d) Monthly",
-      "e) Never"
+      "e) Rarely or Never"
     ]
   },
   {

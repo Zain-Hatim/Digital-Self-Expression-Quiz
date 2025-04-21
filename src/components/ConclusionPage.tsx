@@ -27,6 +27,7 @@ interface LocationState {
   personaScores: {
     [key: string]: number;
   };
+  isRarelyUser?: boolean;
 }
 
 const ConclusionPage: React.FC = () => {
@@ -34,6 +35,7 @@ const ConclusionPage: React.FC = () => {
   const location = useLocation();
   const state = location.state as LocationState;
   const personaScores = state?.personaScores || {};
+  const isRarelyUser = state?.isRarelyUser || false;
 
   // Find the highest scoring persona
   const getHighestScoringPersona = () => {
@@ -99,7 +101,20 @@ const ConclusionPage: React.FC = () => {
       <div className="floating-element" />
       
       <div className="conclusion-container">
-        {primaryPersona && (
+        {isRarelyUser ? (
+          <>
+            <h1>
+              <span className="emoji-left">🎉</span>
+              <span className="congratulations-text">
+                Congratulations!
+              </span>
+              <span className="emoji-right">🎉</span>
+            </h1>
+            <div className="persona-result">
+              <h2>You're A Healthy Person, Can't Relate...</h2>
+            </div>
+          </>
+        ) : (
           <>
             <h1>
               <span className="emoji-left">🎉</span>
@@ -107,22 +122,22 @@ const ConclusionPage: React.FC = () => {
                 Congratulations!
               </span>
               <span className="persona-name-text">
-                You're a {primaryPersona.name}
+                You're a {primaryPersona?.name}
               </span>
               <span className="emoji-right">🎉</span>
             </h1>
             <div className="primary-persona">
               <div className="persona-card">
-                <img 
-                  src={getPersonaImage(primaryPersona.name)} 
-                  alt={`${primaryPersona.name} illustration`}
-                  className="persona-image"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.style.display = 'none';
-                  }}
-                />
-                <p>{primaryPersona.description}</p>
+                {!imageErrors.has(highestPersona) && (
+                  <img 
+                    src={getPersonaImage(highestPersona)} 
+                    alt={`${highestPersona} illustration`}
+                    className="persona-image"
+                    onLoad={() => handleImageLoad(highestPersona)}
+                    onError={() => handleImageError(highestPersona)}
+                  />
+                )}
+                <p>{primaryPersona?.description}</p>
               </div>
             </div>
           </>
@@ -171,7 +186,7 @@ const ConclusionPage: React.FC = () => {
             {personas.map(persona => (
               <div 
                 key={persona.name} 
-                className={`score-item ${persona.name === highestPersona ? 'highest' : ''}`}
+                className={`score-item ${!isRarelyUser && persona.name === highestPersona ? 'highest' : ''}`}
               >
                 <span className="persona-name">{persona.name}</span>
                 <span className="persona-score">{personaScores[persona.name] || 0} points</span>
