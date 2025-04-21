@@ -371,11 +371,11 @@
   border: 1px solid rgba(100, 255, 218, 0.1);
   min-height: 400px;
   width: 98%;
-  max-width: 850px;
+  max-width: 900px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .other-personas-container h2 {
@@ -395,7 +395,7 @@
   width: 100%;
   padding: 1rem;
   margin: 0 auto;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .personas-display {
@@ -582,11 +582,11 @@
   }
 
   .other-personas-container {
-    padding: 0.8rem;
+    min-height: 450px;
   }
 
   .personas-scroll-container {
-    min-height: 250px;
+    min-height: 400px;
   }
 
   .persona-scroll-item {
@@ -622,5 +622,13 @@
 
   .scroll-button.scroll-right {
     right: -1rem;
+  }
+
+  .other-personas-container {
+    min-height: 500px;
+  }
+
+  .personas-scroll-container {
+    min-height: 450px;
   }
 } 
