@@ -1,15 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import './ConclusionPage.css';
 import { personas } from '../data/personaData';
-
-// Import persona images
-import curatedCreatorImage from '../assets/Personas/Curated-Creator.png';
-import fleetingSnapperImage from '../assets/Personas/Fleeting-Snapper.png';
-import realTimeConnectorImage from '../assets/Personas/Real-Time-Connector.png';
-import quietObserverImage from '../assets/Personas/Quiet-Observer.png';
-import socialButterflyImage from '../assets/Personas/Social-Butterfly.png';
-import thoughtfulCommentatorImage from '../assets/Personas/Thoughtful-Commentator.png';
 
 // Helper function to get image path
 const getPersonaImage = (personaName: string) => {
@@ -66,11 +58,9 @@ const ConclusionPage: React.FC = () => {
     const highestPersona = getHighestScoringPersona();
     return personas.findIndex(p => p.name !== highestPersona);
   });
-  const [loadedImages, setLoadedImages] = useState<Set<string>>(new Set());
   const [imageErrors, setImageErrors] = useState<Set<string>>(new Set());
 
   const handleImageLoad = (personaName: string) => {
-    setLoadedImages(prev => new Set(prev).add(personaName));
     setImageErrors(prev => {
       const newSet = new Set(prev);
       newSet.delete(personaName);
